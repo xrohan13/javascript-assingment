@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function d()
+            {
+                var t=new Date();
+                var day=t.getDate();
+                var month=t.getMonth()+1;
+                var year=t.getFullYear();
+
+                if(month<10)
+                {
+                    month='0'+month;
+                }
+
+                document.write("the current date is : "+day+"-"+month+"-"+year);
+            }
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick="d()">click me</button>
+    </body>
+</html>
